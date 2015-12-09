@@ -15,16 +15,16 @@
 		205AE8131AED794D00289F3F /* SampleUSPSXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = 205AE8121AED794D00289F3F /* SampleUSPSXML.xml */; };
 		205AE8141AED794D00289F3F /* SampleUSPSXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = 205AE8121AED794D00289F3F /* SampleUSPSXML.xml */; };
 		205EF4B81B2DF6CA0019FE77 /* USPSCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205EF4B71B2DF6CA0019FE77 /* USPSCommunicator.swift */; };
-		207D4D3E1BD67AAB006FAB09 /* PadSplitViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D4D3D1BD67AAB006FAB09 /* PadSplitViewControllerTests.swift */; settings = {ASSET_TAGS = (); }; };
-		207D4D401BD67AD5006FAB09 /* PadSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D4D3F1BD67AD5006FAB09 /* PadSplitViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		207D4D421BD67E62006FAB09 /* PersistenceControllerAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D4D411BD67E62006FAB09 /* PersistenceControllerAccessible.swift */; settings = {ASSET_TAGS = (); }; };
+		207D4D3E1BD67AAB006FAB09 /* PadSplitViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D4D3D1BD67AAB006FAB09 /* PadSplitViewControllerTests.swift */; };
+		207D4D401BD67AD5006FAB09 /* PadSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D4D3F1BD67AD5006FAB09 /* PadSplitViewController.swift */; };
+		207D4D421BD67E62006FAB09 /* PersistenceControllerAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D4D411BD67E62006FAB09 /* PersistenceControllerAccessible.swift */; };
 		2092AAF11B68613E005DBC46 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AAF01B68613E005DBC46 /* PersistenceController.swift */; };
 		2092AB151B686623005DBC46 /* PackageModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2092AB131B686623005DBC46 /* PackageModel.xcdatamodeld */; };
 		2092AB201B6873F1005DBC46 /* Package+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AB1E1B6873F1005DBC46 /* Package+CoreDataProperties.swift */; };
 		2092AB211B6873F1005DBC46 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AB1F1B6873F1005DBC46 /* Package.swift */; };
-		20C269621BA510AD0044FCA9 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C269611BA510AD0044FCA9 /* ViewControllerTests.swift */; settings = {ASSET_TAGS = (); }; };
-		20C269641BA6054D0044FCA9 /* TrackingHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C269631BA6054D0044FCA9 /* TrackingHistoryViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		20C269661BA60B1B0044FCA9 /* TrackingHistoryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C269651BA60B1B0044FCA9 /* TrackingHistoryViewControllerTests.swift */; settings = {ASSET_TAGS = (); }; };
+		20C269621BA510AD0044FCA9 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C269611BA510AD0044FCA9 /* ViewControllerTests.swift */; };
+		20C269641BA6054D0044FCA9 /* TrackingHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C269631BA6054D0044FCA9 /* TrackingHistoryViewController.swift */; };
+		20C269661BA60B1B0044FCA9 /* TrackingHistoryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C269651BA60B1B0044FCA9 /* TrackingHistoryViewControllerTests.swift */; };
 		20DE6D891AED687E00A7A73F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DE6D881AED687E00A7A73F /* AppDelegate.swift */; };
 		20DE6D8B1AED687E00A7A73F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DE6D8A1AED687E00A7A73F /* ViewController.swift */; };
 		20DE6D8E1AED687E00A7A73F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20DE6D8C1AED687E00A7A73F /* Main.storyboard */; };
@@ -36,6 +36,7 @@
 		55476F671AFFED4B00F9003C /* TestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55476F661AFFED4B00F9003C /* TestInfo.swift */; };
 		84F91D511C0A2326005FBFCE /* PackageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F91D501C0A2326005FBFCE /* PackageManager.swift */; };
 		84F91D531C0A246B005FBFCE /* MockPackageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F91D521C0A246B005FBFCE /* MockPackageManager.swift */; };
+		9BE20E1B1C17BBCA0049B459 /* USPSConfig_sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BE20E1A1C17BBCA0049B459 /* USPSConfig_sample.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		55476F661AFFED4B00F9003C /* TestInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestInfo.swift; sourceTree = "<group>"; };
 		84F91D501C0A2326005FBFCE /* PackageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageManager.swift; sourceTree = "<group>"; };
 		84F91D521C0A246B005FBFCE /* MockPackageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPackageManager.swift; sourceTree = "<group>"; };
+		9BE20E1A1C17BBCA0049B459 /* USPSConfig_sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = USPSConfig_sample.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				205AE8121AED794D00289F3F /* SampleUSPSXML.xml */,
 				20DE6D871AED687E00A7A73F /* Info.plist */,
 				20182FF41B136410002824F4 /* USPSConfig.json */,
+				9BE20E1A1C17BBCA0049B459 /* USPSConfig_sample.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				20DE6D931AED687E00A7A73F /* LaunchScreen.xib in Resources */,
 				205AE8131AED794D00289F3F /* SampleUSPSXML.xml in Resources */,
 				20DE6D901AED687E00A7A73F /* Images.xcassets in Resources */,
+				9BE20E1B1C17BBCA0049B459 /* USPSConfig_sample.json in Resources */,
 				20182FF51B136410002824F4 /* USPSConfig.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
