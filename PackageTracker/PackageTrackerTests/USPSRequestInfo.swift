@@ -9,9 +9,20 @@
 import Foundation
 
 struct USPSRequestInfo {
-    let userID: String
+	var userID: String {
+		get {
+			guard let filePath = NSBundle.mainBundle().pathForResource("USPSConfig", ofType: "json") else { return "" }
+			let data = NSData(contentsOfFile: filePath)!
+			let json: AnyObject = try! NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
+			let userID = json["userID"] as! String
+			return userID
+		}
+		// what's the fallout if userID is nil or fails? 
+		// TODO: Expand error handling.
+	}
+	
     let packageID: String
-    
+	
     var baseURLString: String {
         return "http://production.shippingapis.com"
     }

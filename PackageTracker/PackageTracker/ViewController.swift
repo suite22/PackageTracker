@@ -48,22 +48,9 @@ class ViewController: UIViewController, UITableViewDataSource {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
-    
-    private func userIDFromJSON() -> String? {
-        guard let filePath = NSBundle.mainBundle().pathForResource("USPSConfig", ofType: "json") else { return nil }
-        let data = NSData(contentsOfFile: filePath)!
-        let json: AnyObject = try! NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
-        let userID = json["userID"] as! String
-        return userID
-    }
-    
+	
     func fetchPackageInfo(packageID packageID: String, completion: (Void -> Void)? = nil) {
-        guard let userID = userIDFromJSON() else {
-            self.items = ["There's nothing to see here"]
-            self.tableView?.reloadData()
-            return
-        }
-        let requestInfo = USPSRequestInfo(userID: userID, packageID: packageID)
+        let requestInfo = USPSRequestInfo(packageID: packageID)
         packageManager.fetchPackageResults(requestInfo) { [weak self] items in
             defer { self?.tableView.reloadData() }
             if items.isEmpty {
