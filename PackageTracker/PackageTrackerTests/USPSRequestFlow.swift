@@ -16,11 +16,10 @@ class USPSRequestFlow: XCTestCase {
     
     func testProvidingRequestInfoReturnsSerializedXML() {
         // given
-        
-        let userID = "conceptsincode"
+		
         let packageID = "12345"
         
-        let uspsRequestInfo = USPSRequestInfo(userID: userID, packageID: packageID)
+        let uspsRequestInfo = USPSRequestInfo(packageID: packageID)
     
         let expectedXMLString = "ShippingAPI.dll?API=TrackV2&XML=%3C?xml%20version=%221.0%22%20encoding=%22UTF%E2%80%908%22%20?%3E%3CTrackFieldRequest%20USERID=%22conceptsincode%22%3E%3CTrackID%20ID=%2212345%22%3E%3C/TrackID%3E%3C/TrackFieldRequest%3E"
         
@@ -47,12 +46,11 @@ class USPSRequestFlow: XCTestCase {
     }
     
     func testFullUSPSURLCreation() {
-        let userID = "conceptsincode"
         let packageID = "12345"
         
         let expectedURLString = "http://production.shippingapis.com/ShippingAPI.dll?API=TrackV2&XML=%3C?xml%20version=%221.0%22%20encoding=%22UTF%E2%80%908%22%20?%3E%3CTrackFieldRequest%20USERID=%22conceptsincode%22%3E%3CTrackID%20ID=%2212345%22%3E%3C/TrackID%3E%3C/TrackFieldRequest%3E"
         
-        let request = USPSRequestInfo(userID: userID, packageID: packageID)
+        let request = USPSRequestInfo(packageID: packageID)
         guard let url = request.requestURL else {
             XCTFail("url should not be nil")
             return
